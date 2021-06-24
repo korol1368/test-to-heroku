@@ -1,6 +1,10 @@
 {
   "name": "test-to-heroku",
   "version": "0.0.0",
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.10"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +12,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
